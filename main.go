@@ -23,5 +23,6 @@ package main
 // }
 
 func main() {
-	startRepl()
+	//remove logic that prints first word back to user
+	// startRepl()
 }

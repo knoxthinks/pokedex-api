@@ -7,22 +7,24 @@ import (
 	"strings"
 )
 
-func startRepl() {
-	reader := bufio.NewScanner(os.Stdin)
-	for {
-		fmt.Print("Pokedex > ")
-		reader.Scan()
+//Remove logic thats prints first word
 
-		words := cleanInput(reader.Text())
-		if len(words) == 0 {
-			continue
-		}
+// func startRepl() {
+// 	reader := bufio.NewScanner(os.Stdin)
+// 	for {
+// 		fmt.Print("Pokedex > ")
+// 		reader.Scan()
 
-		commandName := words[0]
+// 		words := cleanInput(reader.Text())
+// 		if len(words) == 0 {
+// 			continue
+// 		}
 
-		fmt.Printf("Your command was: %s\n", commandName)
-	}
-}
+// 		commandName := words[0]
+
+// 		fmt.Printf("Your command was: %s\n", commandName)
+// 	}
+// }
 
 func cleanInput(text string) []string {
 	output := strings.ToLower(text)
