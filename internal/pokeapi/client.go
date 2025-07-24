@@ -3,7 +3,7 @@ package pokeapi
 import (
 	"net/http"
 	"time"
-	"github.com/knoxthinks/pokedex-api/internal/pokeapi"
+	"github.com/knoxthinks/pokedex-api/internal/pokecache"
 )
 
 // Client -
